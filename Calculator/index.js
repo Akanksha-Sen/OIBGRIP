@@ -1,8 +1,12 @@
-let screen = document.getElementById('screen');
- buttons = document.querySelectorAll('button');
- let screenValue='';
- for(item of buttons){
-    item.addEventListener('click', (e)=>{
+let screen = document.getElementById('screen'); //returns element having id=screen
+ buttons = document.querySelectorAll('button'); //returns list of elements matching selector buttons
+
+ let screenValue=''; //variable
+
+ for(item of buttons) //iterating the list
+ {
+    item.addEventListener('click', (e)=>  //addEventListener() method attaches an event handler to an element.
+    {
         buttonText = e.target.innerText;
         console.log(buttonText);
 
